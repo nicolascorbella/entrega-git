@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <header>
+        
+        <nav>
+             <ul>
+                <li><img src="../index/tomate.png"></li>
+                <li><a href="../index/index.html">Home</a></li>
+                <li><a href="../contact/contact.html">Contact</a></li>
+                <li><a href="../about/about.html">About us</a></li>
+                <li><a href="../donate/donate.html">Donate</a></li>
+                <li><a href="../shop/shop.html">Shop</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <h4>Apoya nuestra causa</h4>
+            <picture>
+            <img class="donate" src="donate.png">
+        </picture>
+            <p>Tu donación nos ayudará a seguir produciendo los mejores tomates y apoyar a las comunidades locales.</p>
+            <form action="submit_donation" method="POST">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email" required>
+
+                <label for="amount">Monto de la donación:</label>
+                <input type="text" id="amount" name="amount" required>
+
+                <label for="message">Mensaje (opcional):</label>
+                <textarea id="message" name="message" rows="4"></textarea>
+
+                <input type="submit" value="Donar">
+            </form>
+        </div>
+    </main>
+    <footer>
+        Toma.toe &copy; 2024
+    </footer>
+</body>
+</html>
